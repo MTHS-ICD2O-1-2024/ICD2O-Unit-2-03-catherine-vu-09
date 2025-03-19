@@ -7,11 +7,13 @@
 /**
  * Do basic math.
  */
-function enterClicked() {
-const streetNumber = document.getElementById('streetNumber').value;
-const streetName = document.getElementById('streetName').value;
-document.getElementById("address").innerHTML =
-    "Your address is: " + streetNumber + ", " + streetName + "."
-}
 
+function doMathClicked() {
+
+const streetNumber = document.getElementById('street-number').value;
+const streetName = document.getElementById('street-name').value;
+
+const output = document.getElementById('output');
+output.textContent = `Your address is: ${streetNumber} ${streetName}`;
+};
 
