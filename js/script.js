@@ -10,9 +10,8 @@
 function enterClicked() {
 const streetNumber = document.getElementById('streetNumber').value;
 const streetName = document.getElementById('streetName').value;
+document.getElementById("address").innerHTML =
+    "Your address is: " + streetNumber + ", " + streetName + "."
 }
-if (streetNumber && streetName) {
-const output = `Your address is: ${streetNumber} ${streetName}.`;
-document.getElementById('output').textContent = output;
-} 
+
 
