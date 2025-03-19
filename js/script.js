@@ -8,8 +8,8 @@
  * Do basic math.
  */
 
-function doMathClicked() {
-
+function enterClicked() {
+ document.getElementById("answer").innerHTML = "Hello, World!"
 const streetNumber = document.getElementById('street-number').value;
 const streetName = document.getElementById('street-name').value;
 
