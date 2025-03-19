@@ -5,15 +5,15 @@
 // This file contains the JS functions for index.html
 
 /**
- * Do basic math.
+ * Enter street number and name
  */
 
 function enterClicked() {
- document.getElementById("answer").innerHTML = "Hello, World!"
-const streetNumber = document.getElementById('street-number').value;
-const streetName = document.getElementById('street-name').value;
+  // Get input values
+  const streetNumber = document.querySelector("#streetNumber").value;
+  const streetName = document.querySelector("#streetName").value;
 
-const output = document.getElementById('output');
-output.textContent = `Your address is: ${streetNumber} ${streetName}`;
-};
+  // Display output
+  document.querySelector("#output").textContent = `Your address is: ${streetNumber} ${streetName}.`;
+}
 
