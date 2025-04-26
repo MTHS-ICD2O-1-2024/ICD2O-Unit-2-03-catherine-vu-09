@@ -38,23 +38,31 @@
       <div class="page-content">
         <p>Please enter the following:</p>
         <form>
-          <label for="streetNumber">Street number</label>
-          <input type="text" id="streetNumber" placeholder="Enter street number" />
-          <br>
+    <!-- Simple Textfield -->
+    <p>Street Name</p>
+    <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" id="street-name">
+    <label class="mdl-textfield__label" for="street-name">Street name here ...</label>
+    </div>
 
-          <label for="streetName">Street Name</label>
-          <input type="text" id="streetName" placeholder="Enter street name" />
-          <br>
-
-          <p id="output"></p>
-
+    <!-- Numeric Textfield -->
+    <p>Street Number</p>
+    <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="street-number">
+    <label class="mdl-textfield__label" for="street-number">Street number here ...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+    </div>
+    </br>
           <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
             onclick="enterClicked()" type="button">
             Enter!
           </button>
-          <script src="script.js"></script>
+
         </form>
-        <br>
+        <br/>
+        <div class="page-content-answer">
+          <div id="address"></div>
+        </div>
     </main>
   </div>
 </body>

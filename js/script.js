@@ -8,12 +8,12 @@
  * Enter street number and name
  */
 
-function enterClicked() {
-  // Get input values
-  const streetNumber = document.querySelector("#streetNumber").value;
-  const streetName = document.querySelector("#streetName").value;
-
-  // Display output
-  document.querySelector("#output").textContent = `Your address is: ${streetNumber} ${streetName}.`;
+function enterClicked() { 
+  //input 
+  const streetName = document.getElementById("street-name").value
+  const streetNumber = parseInt(document.getElementById("street-number").value)
+  //output 
+  document.getElementById("address").innerHTML = 
+  "Your address is: " + streetName + "," + streetNumber + "."
 }
 
